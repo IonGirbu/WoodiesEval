@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "nav nav"
+    "section section"
+    ;
+    margin:0;
+}
+.Logo{
+    margin-left: 0px;
+    grid-area: nav;
+    
+    position: absolute;
+    width: 230px;    
+    height: 40px;
+    left: 20px;
+    top: 15px;
+    background-image: url(Group28logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+nav{
+    grid-area: nav;
+    position: absolute;
+    border: 2px solid black;
+    width: 100%;
+    
+}
+nav ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(6,1fr);
+    border:2px solid black;
+    margin-left: 300px;
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+}
+nav li{
+    
+    margin:0px;
+    text-align: center;
+    padding-top: 9px;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.clickborder{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    height: 40px;
+}
